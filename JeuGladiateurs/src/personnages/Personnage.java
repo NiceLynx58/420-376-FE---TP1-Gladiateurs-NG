@@ -19,11 +19,19 @@ public class Personnage {
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Constructeurs et initialisation">
     public Personnage(String nom, int valeurMaxAttaque, int valeurDefense, int pointsDeVie, int initiative) {
-        
+        this.nom = nom;
+        this.pointsDeVie = pointsDeVie;
+        this.valeurMaxAttaque = valeurMaxAttaque;
+        this.valeurDefense = valeurDefense;
+        this.initiative = initiative;
     }
 
     public Personnage() {
-        
+        nom = "";
+        pointsDeVie = 0;
+        valeurMaxAttaque = 0;
+        valeurDefense = 0;
+        initiative = 0;
     }
     // </editor-fold>
 
@@ -51,7 +59,7 @@ public class Personnage {
         return initiative;
     }
 
-        public void setNom(String nom) {
+    public void setNom(String nom) {
         this.nom = nom;
     }
 
