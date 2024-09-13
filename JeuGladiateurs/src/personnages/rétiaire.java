@@ -4,6 +4,8 @@
  */
 package personnages;
 
+import java.util.Random;
+
 
 public class rétiaire extends Personnage{
     private boolean filet;
@@ -27,6 +29,29 @@ public class rétiaire extends Personnage{
     @Override
     public void afficherInfosPersonnage() {
         super.afficherInfosPersonnage();
-        System.out.print( '\t' + "Classe de combat : Rétiaire");
+        System.out.print( '\t' + "Classe de combat : Rétiaire" + '\n');
+    }
+    @Override
+    public void frapperPersonnage(Personnage personnageCible) {
+        if(filet == true){
+            System.out.println("Igor l'empaleur lance son filet");
+            Random rand = new Random();
+            int minVal = 0;
+            int maxVal = 10;
+            int touche = rand.nextInt(maxVal - minVal)+ minVal;
+            if(touche == 10){
+                System.out.println('\n' + "Son filet attrape Bob le malchanceux et il l'empale sauvagement avec sa lance");
+                personnageCible.setPointsDeVie(minVal);
+            }
+            else{
+                System.out.println("Le filet n'a pas atteint sa cible" + '\n');
+                filet = false;
+            }
+        }
+        else{
+            System.out.println("Igor ramasse son filet et en profite pour attaquer");
+            super.frapperPersonnage(personnageCible);
+            filet = true;
+        }
     }
 }

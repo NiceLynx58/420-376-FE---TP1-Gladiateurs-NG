@@ -122,9 +122,9 @@ public class Personnage {
         if(dommages <= 0){dommages = 0;}
         personnageCible.pointsDeVie -= dommages;
         if(personnageCible.pointsDeVie <= 0){personnageCible.pointsDeVie = 0;}
-        System.out.println(this.nom + " attaque avec une puissance de : " + forceDeFrappe);
+        System.out.println('\n' + this.nom + " attaque avec une puissance de : " + forceDeFrappe);
         System.out.println(personnageCible.nom + " a une défense de : " + personnageCible.valeurDefense);
-        System.out.println("Les dommages sont donc de : " + dommages + '\n');
+        System.out.println("Les dommages sont donc de : " + dommages);
     }
 
     public void setNewInitiativeRandom() {
