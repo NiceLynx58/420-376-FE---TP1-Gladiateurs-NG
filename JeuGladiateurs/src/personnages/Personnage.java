@@ -112,14 +112,18 @@ public class Personnage {
     private int attaqueCalcul() {
         Random rand = new Random();
         int minValue =0;
-        int valAttaque = rand.nextInt(valeurMaxAttaque - minValue) + minValue;
+        int valAttaque = rand.nextInt(this.valeurMaxAttaque - minValue) + minValue;
         return valAttaque;
     }
 
     public void frapperPersonnage(Personnage personnageCible) {
-        // TODO : Récupérer la valeur d'attaque pour ce tour, calculer les dégats,
-        //modifier les points de vie du personnage cible, afficher les détails
-        // sur l'attaque, tel que montré dans l'énoncé.
+        int forceDeFrappe = attaqueCalcul();
+        int dommages = forceDeFrappe - personnageCible.valeurDefense;
+        if(dommages <= 0){dommages = 0;}
+        personnageCible.pointsDeVie -= dommages;
+        System.out.println(this.nom + " attaque avec une puissance de : " + forceDeFrappe);
+        System.out.println(personnageCible.nom + " a une défense de : " + personnageCible.valeurDefense);
+        System.out.println("Les dommages sont donc de : " + dommages);
     }
 
     public void setNewInitiativeRandom() {
