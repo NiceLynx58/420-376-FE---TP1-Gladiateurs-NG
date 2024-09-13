@@ -27,7 +27,8 @@ public class JeuGladiateurs {
     Igor.afficherInfosPersonnage();
     affichage.afficherDebutCombat();
     tour.afficheTour();
-  
+    affichage.afficherSeparateurInfosPerso();
+    affichage.afficherSeparateurDeTour();
 
     // </editor-fold>
 
