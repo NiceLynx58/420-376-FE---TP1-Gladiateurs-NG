@@ -29,11 +29,12 @@ public class rétiaire extends Personnage{
     @Override
     public void afficherInfosPersonnage() {
         super.afficherInfosPersonnage();
-        System.out.print( '\t' + "Classe de combat : Rétiaire" + '\n');
+        System.out.print( '\t' + "Classe de combat : Rétiaire");
     }
     @Override
     public void frapperPersonnage(Personnage personnageCible) {
         if(filet == true){
+            System.out.print('\n');
             System.out.println("Igor l'empaleur lance son filet");
             Random rand = new Random();
             int minVal = 0;
@@ -49,6 +50,7 @@ public class rétiaire extends Personnage{
             }
         }
         else{
+            System.out.print('\n');
             System.out.println("Igor ramasse son filet et en profite pour attaquer");
             super.frapperPersonnage(personnageCible);
             filet = true;

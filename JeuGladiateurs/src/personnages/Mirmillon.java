@@ -19,7 +19,7 @@ public class Mirmillon extends Personnage{
     @Override
     public void afficherInfosPersonnage() {
         super.afficherInfosPersonnage();
-        System.out.print( '\t' + "Classe de combat : Mirmillon");
+        System.out.print( '\t' + "Classe de combat : Mirmillon" + '\n');
     }
     @Override 
     public void setNewInitiativeRandom(){
@@ -30,11 +30,12 @@ public class Mirmillon extends Personnage{
     }
     @Override
     public void frapperPersonnage(Personnage personnageCible) {
+        System.out.print('\n');
         super.frapperPersonnage(personnageCible);
         if(personnageCible.getPointsDeVie() == 0){
             System.out.println("Bob le malchanceux décapite Igor dont la tête roule sur le sol !!");
         }
-        else {super.frapperPersonnage(personnageCible);}
+        else {System.out.print('\n');super.frapperPersonnage(personnageCible);}
         
     }
 }
