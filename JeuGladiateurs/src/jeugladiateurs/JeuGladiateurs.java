@@ -27,12 +27,7 @@ public class JeuGladiateurs {
     Igor.afficherInfosPersonnage();
     affichage.afficherDebutCombat();
     tour.afficheTour();
-    Bob.afficherInfosPersonnage();
-    Bob.setNewInitiativeRandom();
-    Bob.afficherInfosPersonnage();
-    Igor.afficherInfosPersonnage();
-    Igor.setNewInitiativeRandom();
-    Igor.afficherInfosPersonnage();
+  
 
     // </editor-fold>
 
