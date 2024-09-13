@@ -5,6 +5,6 @@
 package personnages;
 
 
-public class Mirmillon {
+public class rétiaire {
     
 }
