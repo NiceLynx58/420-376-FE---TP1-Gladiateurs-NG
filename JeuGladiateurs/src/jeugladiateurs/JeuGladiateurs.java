@@ -4,6 +4,7 @@ import personnages.Personnage;
 import combat.CompteurDeTour;
 import combat.AffichageEcran;
 
+
 public class JeuGladiateurs {
 
     public static void main(String[] args) {
@@ -26,6 +27,12 @@ public class JeuGladiateurs {
     Igor.afficherInfosPersonnage();
     affichage.afficherDebutCombat();
     tour.afficheTour();
+    Bob.afficherInfosPersonnage();
+    Bob.setNewInitiativeRandom();
+    Bob.afficherInfosPersonnage();
+    Igor.afficherInfosPersonnage();
+    Igor.setNewInitiativeRandom();
+    Igor.afficherInfosPersonnage();
 
     // </editor-fold>
 
