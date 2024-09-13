@@ -6,15 +6,17 @@ public class CompteurDeTour {
     // **************************************************************************
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Attributs">
-    // TODO : Mettre vos attributs ici
+    private int cptrTour;
     // </editor-fold>
+
+
     
     // **************************************************************************
     // **************************************************************************
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Constructeurs et initialisation">
     public CompteurDeTour() {
-        // TODO : Constructeur SANS param√®tres qui initialise un compteur de tour (attribut) √† 1
+        cptrTour = 1;
     }
     // </editor-fold>
 
@@ -22,20 +24,25 @@ public class CompteurDeTour {
     // **************************************************************************
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Getters et setters">
-    // TODO : Le getter
-    // TODO : Le setter
+    public void setCptrTour(int cptrTour) {
+        this.cptrTour = cptrTour;
+    }
+
+    public int getCptrTour() {
+        return cptrTour;
+    }
     // </editor-fold>
 
     // **************************************************************************
     // **************************************************************************
     // **************************************************************************
-    // <editor-fold defaultstate="collapsed" desc="M√©canique de jeu">
+    // <editor-fold defaultstate="collapsed" desc="MÈcanique de jeu">
     public void augmenteTour() {
-        // TODO : Incr√©menter le compteur de tour
+        // TODO : IncrÈmenter le compteur de tour
     }
 
     public void afficheTour() {
-        // TODO : Afficher le tour actuel, tel que montr√© dans l'√©nonc√©
+        // TODO : Afficher le tour actuel, tel que montrÈ dans l'ÈnoncÈ
     }
     // </editor-fold>
 }

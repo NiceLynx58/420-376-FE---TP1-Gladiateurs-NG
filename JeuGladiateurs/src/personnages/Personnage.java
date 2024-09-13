@@ -95,32 +95,32 @@ public class Personnage {
     // **************************************************************************
     // **************************************************************************
     // **************************************************************************
-    // <editor-fold defaultstate="collapsed" desc="MÃ©canique de jeu">
+    // <editor-fold defaultstate="collapsed" desc="Mécanique de jeu">
     public void afficherInfosPersonnage() {
         System.out.println('\n' + nom);
         System.out.println('\t' + "Attaque : " + valeurMaxAttaque);
-        System.out.println('\t' + "DÃ©fense : " + valeurDefense);
+        System.out.println('\t' + "Défense : " + valeurDefense);
         System.out.println('\t' + "Point de vie : " + pointsDeVie);
         System.out.println('\t' + "Initiative : " + initiative);
         if(statut){System.out.println('\t' + "Statut : mort");}
-        else{System.out.println('\t' + "Statut : vivant");}
+        else{System.out.println('\t' + "Statut : vivant" + '\n');}
         
     }
 
     private int attaqueCalcul() {
         // TODO : Retourner la valeur de l'attaque du personnage.
-        // Cette valeur est trouvÃ©e alÃ©atoirement et doit se situer entre ZÃ‰RO et valeurMaxAttaque.
+        // Cette valeur est trouvée aléatoirement et doit se situer entre ZÉRO et valeurMaxAttaque.
         return 0;
     }
 
     public void frapperPersonnage(Personnage personnageCible) {
-        // TODO : RÃ©cupÃ©rer la valeur d'attaque pour ce tour, calculer les dÃ©gats,
-        //modifier les points de vie du personnage cible, afficher les dÃ©tails
-        // sur l'attaque, tel que montrÃ© dans l'Ã©noncÃ©.
+        // TODO : Récupérer la valeur d'attaque pour ce tour, calculer les dégats,
+        //modifier les points de vie du personnage cible, afficher les détails
+        // sur l'attaque, tel que montré dans l'énoncé.
     }
 
     public void setNewInitiativeRandom() {
-        // TODO : Modifier de faÃ§on alÃ©atoire la valeur INI du personnage.
+        // TODO : Modifier de façon aléatoire la valeur INI du personnage.
     }
     // </editor-fold>
 }
