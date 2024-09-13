@@ -105,7 +105,7 @@ public class Personnage {
         System.out.println('\t' + "Point de vie : " + pointsDeVie);
         System.out.println('\t' + "Initiative : " + initiative);
         if(statut){System.out.println('\t' + "Statut : mort");}
-        else{System.out.println('\t' + "Statut : vivant" + '\n');}
+        else{System.out.println('\t' + "Statut : vivant");}
         
     }
 
