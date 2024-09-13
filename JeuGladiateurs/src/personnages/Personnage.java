@@ -11,7 +11,9 @@ public class Personnage {
     private int valeurMaxAttaque;
     private int valeurDefense;
     private int initiative;
+    private boolean statut;
     // </editor-fold>
+
 
 
     // **************************************************************************
@@ -32,6 +34,7 @@ public class Personnage {
         valeurMaxAttaque = 0;
         valeurDefense = 0;
         initiative = 0;
+        statut = false;
     }
     // </editor-fold>
 
@@ -79,6 +82,13 @@ public class Personnage {
         this.initiative = initiative;
     }
 
+    public void setStatut(boolean statut) {
+        this.statut = statut;
+    }
+
+    public boolean isStatut() {
+        return statut;
+    }
 
     // </editor-fold>
 
@@ -87,8 +97,14 @@ public class Personnage {
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Mécanique de jeu">
     public void afficherInfosPersonnage() {
-        System.out.println('\n' + nom + '\n');
-        System.out.println("Attaque");
+        System.out.println('\n' + nom);
+        System.out.println('\t' + "Attaque : " + valeurMaxAttaque);
+        System.out.println('\t' + "Défense : " + valeurDefense);
+        System.out.println('\t' + "Point de vie : " + pointsDeVie);
+        System.out.println('\t' + "Initiative : " + initiative);
+        if(statut){System.out.println('\t' + "Statut : mort");}
+        else{System.out.println('\t' + "Statut : vivant");}
+        
     }
 
     private int attaqueCalcul() {
